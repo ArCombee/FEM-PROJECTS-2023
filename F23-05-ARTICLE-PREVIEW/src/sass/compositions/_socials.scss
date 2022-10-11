@@ -1,0 +1,56 @@
+@use "../abstracts" as *;
+.socials {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-400);
+  padding: 0 32px;
+  border-radius: 0 0 10px 10px;
+
+  &[data-state="close"] {
+    display: none;
+    transform: scale(0);
+  }
+  &[data-state="open"] {
+    display: flex;
+    align-items: center;
+  }
+  @include mq(md) {
+    border-radius: 10px;
+    top: calc(-100% - 55px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: unset;
+    height: unset;
+    padding: 18px 36px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 95%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+
+      border-top: 20px solid var(--clr-400);
+    }
+  }
+  &-link {
+    display: inline-block;
+    line-height: 0;
+    fill: var(--white, #fff);
+    &:where(:not(:last-child)) {
+      margin-right: 16px;
+    }
+  }
+  .label {
+    color: var(--clr-200);
+    margin-right: 22px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+}

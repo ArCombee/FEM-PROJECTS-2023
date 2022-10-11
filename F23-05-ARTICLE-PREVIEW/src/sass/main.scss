@@ -1,0 +1,57 @@
+@use "abstracts" as *;
+// Global
+@use "globals/global";
+@use "globals/reset";
+@use "globals/root";
+@use "globals/typography";
+
+// Composition
+@use "compositions/flow";
+@use "compositions/publisher";
+@use "compositions/share";
+@use "compositions/button";
+@use "compositions/socials";
+@use "compositions/avatar";
+
+// Utility
+@use "utilities/spacing";
+@use "utilities/radius";
+@use "utilities/squares";
+
+// Block
+@use "blocks/card";
+@use "blocks/fem";
+
+/* REMOVE */
+
+@include mq(md) {
+  h2 {
+    line-height: 1.4;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: 285px 1fr;
+    width: 730px;
+    &-image {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transform: translateY(0) !important;
+    }
+    &__figure {
+      border-radius: 10px 0 0 10px;
+      grid-row: 1 / span 2;
+      grid-column: 1;
+      height: 100%;
+    }
+    &__content {
+      margin: 32px 0 20px;
+
+      --fs-heading: 20px;
+    }
+    &__footer {
+      padding: 0 40px 32px;
+    }
+  }
+}

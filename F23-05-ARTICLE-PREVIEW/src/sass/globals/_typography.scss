@@ -1,0 +1,26 @@
+body {
+  display: grid;
+  place-items: center;
+  color: var(--clr-300);
+  background-color: var(--clr-100);
+  font-size: var(--fs-text);
+  font-family: var(--ff-site);
+  font-weight: var(--fw-normal);
+}
+h2 {
+  font-size: var(--fs-heading);
+}
+h2,
+h3 {
+  line-height: 1.5;
+  color: var(--clr-400);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.2px;
+}
+
+p {
+  letter-spacing: 0.12px;
+}
+time {
+  color: var(--clr-200);
+}

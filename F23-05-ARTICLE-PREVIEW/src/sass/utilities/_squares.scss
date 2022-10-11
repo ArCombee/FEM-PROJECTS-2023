@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+.sq-40px {
+  @include square(40px);
+}
+.sq-32px {
+  @include square(32px);
+}
+.sq-20px {
+  @include square(20px);
+}
+.sq-15px {
+  @include square(15px);
+}

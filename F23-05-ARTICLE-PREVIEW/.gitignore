@@ -1,0 +1,28 @@
+# ---------------------
+# PATHS
+# ---------------------
+node_modules/
+.vscode/
+**/01_DOWLOADFILES/
+**/02_DESIGN/
+**/public/
+_SANDBOX/
+_github_pages
+
+# ---------------------
+# FILES 
+# ---------------------
+*.zip
+.*7z
+.DS_Store
+.prettierignore
+Thumbs.db
+package-lock.json
+
+# ---------------------
+# FRONTENDMENTOR
+# ---------------------
+*.sketch
+*.fig
+*.xd
+*.psd
